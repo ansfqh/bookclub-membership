@@ -317,15 +317,17 @@
       });
 
       function redirectToMenu() {
-        const form = document.querySelector('.needs-validation');
-        if (!form.checkValidity()) {
-          form.classList.add('was-validated');
-          return false;
-        }
+  const form = document.querySelector('.needs-validation');
+  if (!form.checkValidity()) {
+    form.classList.add('was-validated');
+    return false;
+  }
 
-        
-        window.location.href = "file:///C:/Users/ANIS%20AFIQAH/Documents/membership%20bookclub/menu.html";
-        return false;
+  // Redirect to next page
+  window.location.href = "menu.html"; 
+  return false;
+}
+
       }
     </script>
   </body>
